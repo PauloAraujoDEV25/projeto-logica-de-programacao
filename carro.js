@@ -6,19 +6,19 @@ let comprimentoCarro = 60;
 let alturaCarro = 40;
 
 function mostraCarro() {
-  for (let i = 0; i < imagemCarros.length; i++) {
+  for (let i = 0; i < imagemCarros.length; i ++) {
     image(imagemCarros[i], xCarros[i], yCarros[i], comprimentoCarro, alturaCarro);
   }
 }
 
 function movimentaCarro() {
-  for (let i = 0; i < imagemCarros.length; i++) {
+  for (let i = 0; i < imagemCarros.length; i ++) {
     xCarros[i] -= velocidadeCarros[i];
   }
 }
 
 function voltaPosicaoInicialDoCarro() {
-  for (let i = 0; i < imagemCarros.length; i++) {
+  for (let i = 0; i < imagemCarros.length; i = i + 1) {
     if (passouTodaATela(xCarros[i])) {
       xCarros[i] = 600;
     }
