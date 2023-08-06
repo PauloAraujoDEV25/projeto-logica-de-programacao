@@ -1,5 +1,6 @@
 function setup() {
   createCanvas(500, 400);
+  somDaTrilha.loop();
 }
 
 function draw() {
@@ -11,6 +12,7 @@ function draw() {
   voltaPosicaoInicialDoCarro();
   verificaColisao();
   incluiPontos();
-  marcaPontos()
+  marcaPontos();
+  podeSeMover();
 }
 
